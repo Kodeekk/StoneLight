@@ -1,0 +1,21 @@
+{
+  "name": "stonelight",
+  "version": "0.0.1",
+  "description": "StoneLight Site Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "go": "parcel pages/index.pug",
+    "convert": "pug pages/index.pug -P"
+  },
+  "author": "Kodeekk",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.8.3",
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,28 @@
+body {
+  background-color: #111414;
+}
+
+.button {
+  background-color: #ffc433;
+}
+
+.button:hover {
+  background-color: #fd3;
+}
+
+.button:disabled {
+  background-color: #c7c7c9;
+}
+
+.navbar {
+  background-color: #23170e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */

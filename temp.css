@@ -1,0 +1,917 @@
+.page_404 {
+    padding: 128px 0
+}
+
+.page_404 .row {
+    justify-content: center;
+    align-items: center
+}
+
+.page_404 svg {
+    margin-right: 54px
+}
+
+.page_404 h3 {
+    margin-bottom: 8px
+}
+
+.page_404 p {
+    margin-bottom: 32px;
+    max-width: 360px
+}
+
+@media only screen and (max-width:1264px) {
+    .page_404 .row {
+        flex-flow: column;
+        text-align: center
+    }
+
+    .page_404 svg {
+        margin-right: 0
+    }
+
+    .page_404 h3 {
+        margin-top: 64px
+    }
+}
+
+.page_500 {
+    padding: 128px 0;
+    text-align: center
+}
+
+.page_500 .page_500__animation {
+    margin-bottom: 41px
+}
+
+.page_500 .page_500__title {
+    margin-bottom: 12px
+}
+
+.page_500 .page_500__subtitle {
+    margin-bottom: 32px;
+    white-space: pre
+}
+
+.landing,
+.landing .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.landing .wrapper {
+    padding: 128px 64px;
+    width: 100%;
+    max-width: 1400px
+}
+
+.landing h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px
+}
+
+.landing .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 22px
+}
+
+.landing .buttons a {
+    padding: 12px 22px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 8px;
+    transition: filter .15s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer
+}
+
+.landing .buttons a:hover {
+    filter: brightness(95%)
+}
+
+.landing .buttons a:active {
+    filter: brightness(90%)
+}
+
+.landing .buttons .primary {
+    color: var(--TC_5);
+    background-color: var(--FG_0)
+}
+
+.landing .label {
+    border-radius: 30px;
+    padding: 8px 18px;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.landing .label.grey {
+    background-color: var(--BG_1);
+    color: var(--FG_9)
+}
+
+.landing .label.yellow {
+    background-color: var(--YEL);
+    color: var(--BG_9)
+}
+
+.landing .label.blue {
+    background-color: var(--TC_5);
+    color: var(--FG_0)
+}
+
+.landing .label.green {
+    background-color: var(--GRN);
+    color: var(--FG_0)
+}
+
+.landing .label.black {
+    background-color: var(--FG_9);
+    color: var(--BG_0)
+}
+
+.landing ul {
+    color: var(--FG_9);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    list-style-position: inside
+}
+
+.landing ul li+li {
+    margin-top: 12px
+}
+
+.landing .banner {
+    width: 100%;
+    max-width: 1920px;
+    text-align: center;
+    color: var(--FG_0);
+    position: relative;
+    overflow: hidden;
+    height: 793px
+}
+
+.landing .banner .content {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #186ef0, #429ae7)
+}
+
+.landing .banner .content h1,
+.landing .banner .content p {
+    color: var(--FG_0)
+}
+
+.landing .banner .content h1 {
+    font-family: TT Norms, sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 56px;
+    font-style: normal;
+    margin-bottom: 22px
+}
+
+.landing .banner .content .text_18_medium {
+    margin-bottom: 45px
+}
+
+.landing .banner .content .inner {
+    max-width: 640px;
+    margin: 128px 0
+}
+
+.landing .banner img {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.landing .activities {
+    text-align: center
+}
+
+.landing .activities h2 {
+    margin-bottom: 16px
+}
+
+.landing .activities .grid {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 64px
+}
+
+.landing .activities .grid div {
+    text-align: left;
+    width: 100%
+}
+
+.landing .activities .grid div h6 {
+    margin-top: 22px;
+    margin-bottom: 8px
+}
+
+.landing .activities .grid div img,
+.landing .activities__image {
+    width: 100%
+}
+
+.landing .big-statement {
+    color: var(--FG_0);
+    background-image: url(/assets/newlanding/common-bg.webp);
+    background-color: var(--TC_5);
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+    text-align: center
+}
+
+.landing .big-statement .text_14_medium,
+.landing .big-statement h2 {
+    color: var(--FG_0)
+}
+
+.landing .big-statement .subheader {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%
+}
+
+.landing .big-statement h2+.subheader {
+    margin-top: 22px
+}
+
+.landing .big-statement .buttons {
+    margin-top: 32px
+}
+
+.landing .big-statement .smaller_wrapper {
+    padding: 128px 32px;
+    width: 1400px
+}
+
+.landing .big-statement .servers {
+    text-align: left;
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+    gap: 32px
+}
+
+.landing .big-statement .servers .server {
+    width: 100%;
+    padding: 32px;
+    background-color: var(--BG_0);
+    border-radius: 16px;
+    transition: background-color .15s ease;
+    color: var(--FG_9);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer
+}
+
+.landing .big-statement .servers .server .label {
+    margin-bottom: 16px
+}
+
+.landing .big-statement .servers .server ul {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 22px
+}
+
+.landing .big-statement .servers .server ul li+li {
+    margin-top: 12px
+}
+
+.landing .big-statement .servers .server .free,
+.landing .big-statement .servers .server .price {
+    padding: 4px 10px;
+    border-radius: 6px;
+    color: var(--FG_0);
+    margin: 0 4px;
+    display: inline-block
+}
+
+.landing .big-statement .servers .server .free.price,
+.landing .big-statement .servers .server .price.price {
+    background-color: var(--TC_5)
+}
+
+.landing .big-statement .servers .server .free.free,
+.landing .big-statement .servers .server .price.free {
+    background-color: var(--GRN)
+}
+
+.landing .big-statement .servers .server:hover {
+    background-color: var(--BG_1)
+}
+
+.landing .big-statement .servers .server:active {
+    background-color: var(--BG_2)
+}
+
+.landing .big-feature {
+    flex-direction: row;
+    gap: 64px
+}
+
+.landing .big-feature.alt {
+    flex-direction: row-reverse
+}
+
+.landing .big-feature .content,
+.landing .big-feature img {
+    width: 100%
+}
+
+.landing .big-feature .content .label {
+    margin-bottom: 16px
+}
+
+.landing .big-feature .content img {
+    margin-bottom: 32px;
+    border-radius: 64px
+}
+
+.landing .big-feature .content h2 {
+    margin-bottom: 16px
+}
+
+.landing .big-feature .content p+p {
+    margin-top: 12px
+}
+
+.landing .big-feature .content ul {
+    margin-top: 22px
+}
+
+.landing .big-feature .content .link {
+    margin-top: 32px;
+    color: var(--TC_5);
+    display: flex;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    width: -moz-fit-content;
+    width: fit-content;
+    transition: .15s ease;
+    transition-propery: color, fill
+}
+
+.landing .big-feature .content .link svg {
+    margin-left: 8px
+}
+
+.landing .big-feature .content .link svg path {
+    fill: var(--TC_5)
+}
+
+.landing .big-feature .content .link:hover {
+    text-decoration: underline;
+    color: var(--TC_6)
+}
+
+.landing .big-feature .content .link:hover svg path {
+    fill: var(--TC_6)
+}
+
+.landing .big-feature .content .link:active {
+    color: var(--TC_7)
+}
+
+.landing .big-feature .content .link:active svg path {
+    fill: var(--TC_7)
+}
+
+.landing .features h2 {
+    text-align: center;
+    margin-bottom: 32px
+}
+
+.landing .features .component {
+    width: 100%
+}
+
+.landing .features .component .control {
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    gap: 12px
+}
+
+.landing .features .component .control .arrow {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color .15s ease
+}
+
+.landing .features .component .control .arrow svg path {
+    fill: var(--FG_5)
+}
+
+.landing .features .component .control .arrow:hover {
+    background-color: var(--BG_1)
+}
+
+.landing .features .component .control .arrow:hover svg path {
+    fill: var(--FG_6)
+}
+
+.landing .features .component .control .arrow:active {
+    background-color: var(--BG_2)
+}
+
+.landing .features .component .control .arrow:active svg path {
+    fill: var(--FG_7)
+}
+
+.landing .features .component .control .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px
+}
+
+.landing .features .component .control .list .feature {
+    color: var(--FG_5);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    padding: 8px 18px;
+    border-radius: 32px;
+    transition: background-color .15s ease
+}
+
+.landing .features .component .control .list .feature:hover {
+    background-color: var(--BG_1)
+}
+
+.landing .features .component .control .list .feature.selected {
+    transition: background-color 0s ease;
+    color: var(--FG_9);
+    border: 1px solid var(--BG_2);
+    padding: 7px 17px;
+    background-color: var(--BG_0)
+}
+
+.landing .features .component .features-banner {
+    height: 429px;
+    width: 100%;
+    border-radius: 22px;
+    overflow: hidden
+}
+
+.landing .features .component .features-banner .general {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #d9d9d9
+}
+
+.landing .features .component .features-banner .general h5 {
+    margin-bottom: 12px;
+    color: #1e1e1f
+}
+
+.landing .features .component .features-banner .general p {
+    color: #1e1e1f
+}
+
+.landing .features .component .features-banner .general p+p {
+    margin-top: 12px
+}
+
+.landing .features .component .features-banner .general .content {
+    margin-left: 64px;
+    box-sizing: content-box;
+    max-width: 360px;
+    height: -moz-fit-content;
+    height: fit-content
+}
+
+.landing .features .component .features-banner .general .illust {
+    width: 100%;
+    margin: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.landing .features .component .features-banner .general .link {
+    margin-top: 22px;
+    color: #1e1e1f;
+    display: flex;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    width: -moz-fit-content;
+    width: fit-content;
+    transition: filter .15s ease
+}
+
+.landing .features .component .features-banner .general .link svg {
+    margin-left: 8px
+}
+
+.landing .features .component .features-banner .general .link svg path {
+    fill: #1e1e1f
+}
+
+.landing .features .component .features-banner .general .link:hover {
+    text-decoration: underline;
+    filter: brightness(90%)
+}
+
+.landing .features .component .features-banner .general .link:active {
+    filter: brightness(80%)
+}
+
+.landing .features .component .features-banner .map {
+    background-color: #000;
+    background-image: url(/assets/newlanding/features/map.webp)
+}
+
+.landing .features .component .features-banner .map .link,
+.landing .features .component .features-banner .map h5,
+.landing .features .component .features-banner .map p {
+    color: var(--FG_0)
+}
+
+.landing .features .component .features-banner .map .link svg path,
+.landing .features .component .features-banner .map h5 svg path,
+.landing .features .component .features-banner .map p svg path {
+    fill: var(--FG_0)
+}
+
+.landing .faq {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    grid-gap: 128px;
+    gap: 128px
+}
+
+.landing .faq .questions h4 {
+    margin-bottom: 32px
+}
+
+.landing .faq .questions .Collapsible {
+    font-size: 16px;
+    line-height: 28px;
+    transition: background-color .15s ease;
+    cursor: pointer;
+    border-bottom: 1px solid var(--BG_1);
+    color: var(--FG_9)
+}
+
+.landing .faq .questions .Collapsible:first-of-type {
+    border-top: 1px solid var(--BG_1)
+}
+
+.landing .faq .questions .Collapsible .Collapsible__trigger {
+    display: block;
+    padding: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.landing .faq .questions .Collapsible .Collapsible__trigger div {
+    display: flex;
+    align-items: center
+}
+
+.landing .faq .questions .Collapsible .Collapsible__trigger div p {
+    margin-right: 12px
+}
+
+.landing .faq .questions .Collapsible .Collapsible__trigger div svg {
+    transition: transform .1s ease;
+    margin-left: auto
+}
+
+.landing .faq .questions .Collapsible .Collapsible__trigger.is-open svg {
+    transform: rotate(180deg)
+}
+
+.landing .faq .questions .Collapsible .Collapsible__contentInner {
+    cursor: default;
+    padding: 0 22px 22px
+}
+
+.landing .faq .questions .Collapsible a {
+    color: var(--TC_5)
+}
+
+.landing .faq .questions .Collapsible a:hover {
+    text-decoration: underline
+}
+
+.landing .faq .questions .Collapsible:hover {
+    background-color: var(--BG_1)
+}
+
+.landing .faq .questions .Collapsible:active {
+    background-color: var(--BG_2)
+}
+
+.landing .faq .discord {
+    padding: 45px;
+    border-radius: 16px;
+    border: 1px solid var(--BG_2);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: background-color .15s ease
+}
+
+.landing .faq .discord .top {
+    display: flex;
+    margin-bottom: 22px
+}
+
+.landing .faq .discord .top .icon {
+    width: 80px;
+    height: 80px;
+    background-color: #5865f2;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.landing .faq .discord .top .right-icon {
+    margin-left: auto
+}
+
+.landing .faq .discord .top .right-icon path {
+    fill: var(--FG_5)
+}
+
+.landing .faq .discord h5 {
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 8px
+}
+
+.landing .faq .discord:hover {
+    background-color: var(--BG_1)
+}
+
+.landing .faq .discord:active {
+    background-color: var(--BG_2)
+}
+
+.landing .links .text_18,
+.landing .links h2 {
+    text-align: center
+}
+
+.landing .links h2+.text_18 {
+    margin-top: 16px
+}
+
+.landing .links .grid {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 64px;
+    gap: 64px;
+    width: 100%
+}
+
+.landing .links .grid .item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: filter .15s ease
+}
+
+.landing .links .grid .item .image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    background-color: var(--BG_1);
+    margin-right: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.landing .links .grid .item .image.discord {
+    background-color: #5865f2
+}
+
+.landing .links .grid .item .image.vk {
+    background-color: #2787f5
+}
+
+.landing .links .grid .item .text p+p {
+    margin-top: 2px
+}
+
+.landing .links .grid .item:hover {
+    filter: brightness(90%)
+}
+
+.landing .links .grid .item:active {
+    filter: brightness(80%)
+}
+
+.landing .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--BG_1)
+}
+
+.landing .footer .wrapper {
+    padding: 32px;
+    flex-direction: row;
+    text-align: left
+}
+
+.landing .footer .wrapper a {
+    color: var(--FG_5);
+    transition: color .15s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer
+}
+
+.landing .footer .wrapper a:hover {
+    color: var(--FG_6);
+    text-decoration: underline
+}
+
+.landing .footer .wrapper a:active {
+    color: var(--FG_7)
+}
+
+.landing .footer .wrapper a.right {
+    color: var(--TC_5)
+}
+
+.landing .footer .wrapper a.right:hover {
+    color: var(--TC_6)
+}
+
+.landing .footer .wrapper a.right:active {
+    color: var(--TC_7)
+}
+
+.landing .footer .wrapper .left+.left {
+    margin-left: 32px
+}
+
+.landing .footer .wrapper .right {
+    margin-left: auto
+}
+
+@media(max-width:1400px) {
+    .landing .faq {
+        grid-template-columns: 1fr;
+        gap: 64px
+    }
+
+    .landing .big-statement .servers {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .landing .big-statement.no-bg {
+        background-color: var(--TC_5);
+        background-image: none
+    }
+
+    .landing .links .grid {
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+@media(max-width:1200px) {
+    .landing .activities .grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .landing .features {
+        display: none
+    }
+}
+
+@media(max-width:900px) {
+    .landing .wrapper {
+        padding: 96px 64px
+    }
+
+    .landing .links .grid {
+        grid-template-columns: 1fr
+    }
+
+    .landing .big-feature,
+    .landing .big-feature.alt {
+        flex-direction: column
+    }
+
+    .landing .big-statement .servers {
+        grid-template-columns: 1fr
+    }
+
+    .landing .footer .wrapper {
+        flex-direction: column
+    }
+
+    .landing .footer .wrapper .left+.left,
+    .landing .footer .wrapper .right {
+        margin: 0
+    }
+}
+
+@media(max-width:640px) {
+    .landing .banner {
+        height: -moz-fit-content;
+        height: fit-content
+    }
+
+    .landing .banner img {
+        display: none
+    }
+
+    .landing .banner .content .inner {
+        padding: 16px;
+        margin: 64px 0
+    }
+
+    .landing .banner .content .inner h1 {
+        font-size: 36px;
+        line-height: 133%
+    }
+
+    .landing .banner .content .inner .buttons {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .landing .wrapper {
+        padding: 64px 32px
+    }
+
+    .landing .activities .grid {
+        grid-template-columns: 1fr
+    }
+}
+
+@media(max-width:360px) {
+    .landing .links .grid .item {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .landing .links .grid .item .image {
+        margin: 0 0 22px
+    }
+}

@@ -1,0 +1,26 @@
+body {
+    background-color: #111414;
+}
+
+.button {
+    background-color: #ffc433;
+}
+
+.button:hover {
+    background-color: #ffdd33;
+}
+
+.button:disabled {
+    background-color: #c7c7c9;
+}
+
+.navbar {
+    background-color: #23170e;
+}
+
+* {
+    font-family: Inter, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
