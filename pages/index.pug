@@ -1,9 +1,15 @@
+extends ../components/navbar.pug
+block pagename
+    - var pageName = 'about'
+
 doctype html
+
 html(lang="en")
     head
         include ../components/head
     body
-        include ../components/header
+        +navbar(pageName)
+        //- include ../components/header
         main.
             
         include ../components/footer
