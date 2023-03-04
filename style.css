@@ -24,3 +24,10 @@ body {
     margin: 0;
     padding: 0;
 }
+.centertext {
+    color: rgb(189, 189, 189);
+    display: flex;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-family: Inter, sans-serif;
+}

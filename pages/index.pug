@@ -1,6 +1,6 @@
-extends ../components/navbar.pug
-block pagename
-    - var pageName = 'about'
+//- extends ../components/navbar.pug
+//- block pagename
+//-     - var pageName = 'about'
 
 doctype html
 
@@ -8,10 +8,13 @@ html(lang="en")
     head
         include ../components/head
     body
-        +navbar(pageName)
-        //- include ../components/header
-        main.
-            
+        //- +navbar(pageName)
+        include ../components/header
+        main
+            span(class="centertext").
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus id aperiam adipisci excepturi aliquam voluptatem laboriosam quis incidunt?
+                Vel eaque facere laborum cum tempore reprehenderit molestiae vero fugit voluptatibus nemo.
         include ../components/footer
 
         include ../components/bottomscripts
