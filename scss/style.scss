@@ -1,0 +1,65 @@
+body {
+  background: url("./images/D.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.backgroundimage {
+  background: rgba(0, 0, 0, 0.5);
+  background: var(--gradient-1);
+  margin: 0 100px 20px 100px;
+
+  .titletext {
+    margin: 0 100px 20px 100px;
+    text-shadow: var(--text-shadow);
+    font-size: var(--font-size-60);
+    text-align: center;
+  }
+}
+
+.button {
+  background-color: #ffc433;
+
+  &:hover {
+    background-color: #ffdd33;
+  }
+
+  &[disabled] {
+    background-color: #c7c7c9;
+  }
+}
+
+#pong-section {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: black;
+
+  @for $i from 1 through 100 {
+    .ball {
+        @include ping-pong(random($i));
+
+        position: absolute;
+        // top: 50%;
+        // transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: chartreuse;
+        animation: ping-pong 10s 0s infinite
+          alternate forwards;
+      }
+  }
+
+  
+}
+
+.navbar {
+  background-color: #23170e;
+}
+
+.centertext {
+  color: rgb(189, 189, 189);
+  display: flex;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}

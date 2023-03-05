@@ -1,3 +1,6 @@
+import "@fontsource/raleway";
+import '../app.scss';
+
 //document.querySelector('footer').innerHTML = "<h1>Hello, World!</h1>"
 
 // function httpGet(theUrl) {
@@ -70,6 +73,19 @@
 //     case "http://localhost:1234/stats":
 //         console.log(document.URL.toString())
 // }
+
+// var pongsection = document.getElementById('pongsection')
+// var height = pongsection.clientHeight
+// var width = pongsection.clientWidth
+// while(true) {
+//    setTimeout(function(){
+//       console.log(height)
+//       console.log(width)
+//    }, 1000)
+   
+// }
+// div.style.left = '100px'
+// div.style.top = '100px'
 
 $(function() {
     $("a").click(function() {

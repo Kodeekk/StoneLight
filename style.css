@@ -1,5 +1,19 @@
 body {
-    background-color: #111414;
+    background-image: "./images/D.png";
+}
+
+.backgroundimage {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(rgb(131, 205, 255) 0%, rgba(0, 212, 255, 1) 100%);
+    margin: 0 100px 20px 100px;
+}
+
+.titletext {
+    margin: 0 100px 20px 100px;
+    text-shadow: rgb(51, 51, 51) 0px 0px 30px;
+    font-size: 60px;
+    text-align: center;
+    font: url("./fonts/TiltWarp-Regular.ttf");
 }
 
 .button {
@@ -24,6 +38,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .centertext {
     color: rgb(189, 189, 189);
     display: flex;

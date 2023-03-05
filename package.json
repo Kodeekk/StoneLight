@@ -12,10 +12,13 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-pug": "^2.8.3",
+    "@parcel/transformer-sass": "^2.8.3",
     "parcel": "^2.8.3"
   },
   "dependencies": {
+    "@fontsource/raleway": "^4.5.12",
     "@popperjs/core": "^2.11.6",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "sass": "^1.58.3"
   }
 }

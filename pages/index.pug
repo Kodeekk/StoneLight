@@ -10,11 +10,12 @@ html(lang="en")
     body
         //- +navbar(pageName)
         include ../components/header
-        main
-            span(class="centertext").
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus id aperiam adipisci excepturi aliquam voluptatem laboriosam quis incidunt?
-                Vel eaque facere laborum cum tempore reprehenderit molestiae vero fugit voluptatibus nemo.
+        //- img(src="../images/D.png", alt="D", class="backgroundimage")
+        div(class="backgroundimage")
+            h1(class="titletext") StoneLight - ванільний сервер без приватів та донату
+            h4(class="titletext") Виживайте, вступайте до кланів,знаходьте нових друзів та просто весело проводьте час
+        div(id="pong-section")
+            div(class="ball")
         include ../components/footer
 
         include ../components/bottomscripts
