@@ -1,5 +1,5 @@
 import "@fontsource/raleway";
-import '../app.scss';
+import "../app.scss";
 
 //document.querySelector('footer').innerHTML = "<h1>Hello, World!</h1>"
 
@@ -13,8 +13,6 @@ import '../app.scss';
 //const obj = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
 //console.log(obj)
 //document.querySelector('footer').innerHTML = '<img src="https://mc-heads.net/body/HiVisPriest" alt="icon">'
-
-
 
 // function navbar_buttons_activation() {
 //     var homebutton = document.getElementById("homebutton")
@@ -54,12 +52,10 @@ import '../app.scss';
 
 // console.log(document.URL.toString())
 
-
 // switch (document.URL.toString) {
 
 //     case "http://localhost:1234/index":
 //         console.log(document.URL.toString())
-
 
 //     case "http://localhost:1234/about":
 //         console.log(document.URL.toString())
@@ -74,24 +70,99 @@ import '../app.scss';
 //         console.log(document.URL.toString())
 // }
 
-// var pongsection = document.getElementById('pongsection')
-// var height = pongsection.clientHeight
-// var width = pongsection.clientWidth
+var pongsection = document.getElementById("pong-section");
+var height = pongsection.clientHeight;
+var width = pongsection.clientWidth;
 // while(true) {
 //    setTimeout(function(){
 //       console.log(height)
 //       console.log(width)
 //    }, 1000)
-   
+
 // }
 // div.style.left = '100px'
 // div.style.top = '100px'
 
-$(function() {
-    $("a").click(function() {
-       // remove classes from all
-       $("a").removeClass("active");
-       // add class to the one we clicked
-       $(this).addClass("active");
-    });
- });
+var factTitles = [
+   "villagers",
+   "totems",
+   "bags",
+   "wonderingtraders",
+   "serverresourcepack",
+   "heads",
+   "armorstands",
+   "banners",
+   "particles",
+];
+
+var factContent = [
+   [
+      "Измененены некоторые торги у жителей",
+      "Алмазные вещи (броня, инструменты, оружие) жители будут продавать не только за изумруды, а и за алмазы (цена у жителей будет меньше чем при крафте на верстаке), книги зачарования будут продаваться за лазурит. Все инструменты и вся броня продаются без зачарований",
+   ],
+   ["Уменьшен шанс дропа тотема с призывателя со 100% до 5%"],
+   ["Добавлен крафт для мешков"],
+   [
+      "Странствующие торговцы иногда могут продать сундук с картой древнего города",
+   ],
+   [
+      "Добавлен ресурспак сервера",
+      "В ресурспак включены: различные шляпы, появляющиеся при переименовании тыкв, карты (переименованая бумага). Названия шляп можно посмотреть здесь",
+   ],
+   ["Игроки при убийстве дропают головы"],
+   [
+      "Редактор стоек для брони",
+      "Нажатие ПКМ c кремнем с руке открывает интуитивно понятное меню управления",
+   ],
+   [
+      "Баннеры можно располагать горизонтально как флаги",
+      "Поддерживаемые блоки: заборы, стены, стеклянные панели, железные решетки, громоотводы. Присядьте и щелкните баннер на одном из поддерживаемых блоков, чтобы разместить его в качестве флага",
+   ],
+   ["У игрока с невидимостью нет частиц эффекта"],
+];
+
+factTitles.forEach((title) => {
+
+   if (factTitles && factContent) {
+
+      var plate = document.createElement("div");
+      plate.classList.add(title);
+
+      if (factContent[factTitles.indexOf(title)].length > 1) {
+
+         var plateContent = document.createElement("div");
+         var plateTitle = document.createElement("span");
+         plateTitle.appendChild(
+            document.createTextNode(factContent[factTitles.indexOf(title)[0]])
+         );
+
+         plateContent.appendChild(plateTitle);
+
+         var innerPlateContent = document.createElement("div");
+         var innerPlateTitle = document.createElement("span");
+         innerPlateTitle.appendChild(
+            document.createTextNode(factContent[factTitles.indexOf(title)[1]])
+         );
+         innerPlateContent.appendChild(innerPlateTitle);
+
+         plateContent.appendChild(innerPlateContent);
+      } else {
+         var plateContent = document.createElement("span");
+         plateContent.appendChild(
+            document.createTextNode(factContent[factTitles.indexOf(title)[0]])
+         );
+      }
+
+      plate.appendChild(plateContent);
+      pongsection.appendChild(plate);
+   }
+});
+
+$(function () {
+   $("a").click(function () {
+      // remove classes from all
+      $("a").removeClass("active");
+      // add class to the one we clicked
+      $(this).addClass("active");
+   });
+});

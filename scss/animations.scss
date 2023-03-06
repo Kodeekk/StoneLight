@@ -1,18 +1,16 @@
-@mixin ping-pong ($i) {
-    @keyframes ping-pong {
-        0% {
-            left: 0%;
-            bottom: 0%;
-        }
-    
-        50% {
-            left: 50%;
-            bottom: 60%;
-        }
-    
-        100% {
-            left: ($i + '%');
-            bottom: 0%;
-        }
+@keyframes ping-pong {
+    0% {
+        left: 0%;
+        bottom: 100%;
+    }
+
+    50% {
+        left: 50%;
+        bottom: 60%;
+    }
+
+    100% {
+        left: 100%;
+        bottom: 0%;
     }
 }
