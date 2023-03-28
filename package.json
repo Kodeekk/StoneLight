@@ -2,7 +2,7 @@
   "name": "stonelight",
   "version": "0.0.1",
   "description": "StoneLight Site Project",
-  "main": "index.js",
+  "main": "js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "go": "parcel pages/index.pug",
